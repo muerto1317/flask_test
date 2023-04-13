@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    {% if title %}
+        <title>Про фласк - {{ title }}</title>
+    {% else %} <title>Про фласк</title>
+    {% endif %}
 </head>
 <body>
 <ul>

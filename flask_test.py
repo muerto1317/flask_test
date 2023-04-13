@@ -7,7 +7,7 @@ menu = ["установка", "первое приложение", "обратн
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Главная страница', menu=menu)
+    return render_template('index.html', menu=menu)
 
 
 @app.route('/about')

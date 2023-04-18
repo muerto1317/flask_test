@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% if title %}
-        <title>Про фласк - {{ title }}</title>
-    {% else %} <title>Про фласк</title>
-    {% endif %}
-</head>
-<body>
-<ul>
-    {% for m in menu %}
-    <li>{{m}}</li>
-    {% endfor %}
-</ul>
-    <h1>основная страничка</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>Содержимое главной страницы</h1>
+{% endblock %}
